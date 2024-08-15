@@ -1,9 +1,32 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineBellAlert } from "react-icons/hi2";
+import { categories } from "../categories/data";
 
 const Navbar = () => {
+  // const [searchTerm, setSearchTerm] = useState("");
+  // const allWidgets = categories.reduce((acc: any, category: any) => {
+  //   return acc.concat(
+  //     category.widgets.map((widget: any) => ({
+  //       ...widget,
+  //       categoryName: category.name,
+  //     }))
+  //   );
+  // }, []);
+
+  // const filterWidgets = () => {
+  //   const wid = allWidgets.filter((widget: any) =>
+  //     widget.name.toLowerCase().includes(searchTerm.toLowerCase())
+  //   );
+  //   if (!searchTerm) {
+  //     return allWidgets;
+  //   }
+  //   return wid;
+  // };
+
+  // const filteredWidgets = filterWidgets();
   return (
     <div className="bg-white flex justify-between items-center py-2 px-4 md:px-6 lg:px-8 h-16 shadow-sm">
       <div className="flex items-center gap-2">
@@ -18,6 +41,7 @@ const Navbar = () => {
           type="text"
           placeholder="Search anything..."
           className="w-full pl-10 bg-transparent border border-[#dfebfc] focus:outline-none py-1 px-2"
+          // onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
       <div className="flex items-center gap-4">
@@ -28,6 +52,20 @@ const Navbar = () => {
           <p className="text-normal text-xs md:text-sm">Dashboard</p>
         </div>
       </div>
+      {/* <div className="mt-4">
+        {filteredWidgets.length > 0 ? (
+          filteredWidgets.map((widget: any, index: any) => (
+            <div key={index} className="mb-2">
+              <h2 className="text-base font-semibold">{widget.name}</h2>
+              <p className="text-sm text-gray-600">
+                Category: {widget.categoryName}
+              </p>
+            </div>
+          ))
+        ) : (
+          <p className="text-gray-500">No widgets found.</p>
+        )}
+      </div> */}
     </div>
   );
 };
