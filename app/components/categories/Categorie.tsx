@@ -46,6 +46,8 @@ const Categorie = ({ name, widgetsOld }: any) => {
           widgets={widgets}
           setWidgets={setWidgets}
           setIsWidgetOpen={setIsWidgetOpen}
+          categoryName={name}
+          wid={widgets}
         />
       ) : (
         <></>
