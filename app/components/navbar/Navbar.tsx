@@ -21,7 +21,7 @@ const Navbar = () => {
           type="text"
           value={searchTerm}
           placeholder="Search anything..."
-          className="w-[600px] pl-10 bg-transparent border border-[#dfebfc] focus:outline-none py-1 px-2 text-left text-base tracking-wide"
+          className="lg:w-[600px] w-[300px] pl-10 bg-transparent border border-[#dfebfc] focus:outline-none py-1 px-2 text-left text-base tracking-wide"
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <div className=" mt-3">

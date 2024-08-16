@@ -24,7 +24,7 @@ const Dashboard = () => {
               <CustomButtonWithOneIcon className="bg-[#fafafa] border border-[#eaeeee] py-3 rounded-md">
                 <CgMoreVerticalR />
               </CustomButtonWithOneIcon>
-              <div className=" flex flex-row justify-center items-center border border-[#1b1c82] py-1 px-2 bg-white gap-1 rounded-md">
+              <div className="flex flex-row justify-center items-center border border-[#1b1c82] py-1 px-2 bg-white gap-1 rounded-md">
                 <IoTimerSharp className="text-[#1b1c82] text-2xl" />|
                 <select
                   name="timeline"

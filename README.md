@@ -1,12 +1,13 @@
 # Accknox -Dashboard
 
+## using Technology : Next.js---
+
 ## Installation
 
 Make sure you have the following installed on your system:
 
 - [Node.js](https://nodejs.org/en/) (v14 or later)
 - [npm](https://www.npmjs.com/) (v6 or later) or [yarn](https://yarnpkg.com/)
-
 - [Installation](#installation)
 
 1. Clone the repository:
@@ -18,13 +19,21 @@ Make sure you have the following installed on your system:
 
    ```
 
-2. Install dependencies:
+2. Import the Project
 
-   ## npm install
+   ## Github Desktop
 
-3. Running cmd:
+   1. Open the project folder in your code editor.
+   2. Open the terminal in your code editor.
+   3. Run the following command to install the dependencies in below:
+
+3. Install dependencies:
+
+   ## npm install or npm i
+
+4. Running cmd:
 
    ## npm run dev
 
-4. Open Your Browser and Navigate to:
+5. Open Your Browser and Navigate to:
    ## http://localhost:3000
