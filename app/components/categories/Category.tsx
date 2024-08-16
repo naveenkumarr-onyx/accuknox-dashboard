@@ -4,7 +4,6 @@ import { Widget } from "./Widget";
 import AddWidget from "./AddWidget";
 import { CustomButtonWithOneIcon } from "../button/Button";
 import { RxCross2 } from "react-icons/rx";
-import { Conform } from "./Conform";
 
 const Category = ({ name, widgetsOld }: any) => {
   const [widgets, setWidgets]: any = useState(widgetsOld);
