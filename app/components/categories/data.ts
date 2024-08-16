@@ -29,7 +29,7 @@ const widgets1 = [
             labels: {
               show: true,
               name: {
-                show: true, // Corrected: should be a boolean
+                show: true,
               },
               value: {
                 show: true,
@@ -46,6 +46,7 @@ const widgets1 = [
               },
             },
           },
+          expandOnClick: false,
         },
       },
       dataLabels: {

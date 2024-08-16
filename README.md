@@ -2,6 +2,9 @@
 
 ## using Technology : Next.js---
 
+Repository Link : [a link](https://github.com/naveenkumarr-onyx/accuknox-dashboard);
+Live Link : [a link](https://accuknox-dashboard-iota.vercel.app/);
+
 ## Installation
 
 Make sure you have the following installed on your system:
@@ -36,4 +39,9 @@ Make sure you have the following installed on your system:
    ## npm run dev
 
 5. Open Your Browser and Navigate to:
+
    ## http://localhost:3000
+
+   or
+
+6. Kindly go through PDF file attached in give link.

@@ -8,7 +8,6 @@ import { RxCross2 } from "react-icons/rx";
 const Category = ({ name, widgetsOld }: any) => {
   const [widgets, setWidgets]: any = useState(widgetsOld);
   const [isWidgetOpen, setIsWidgetOpen] = useState(false);
-  const ref = useRef(null);
 
   const handleDelete = (index: any) => {
     const newWidgetList = widgets.filter(
@@ -27,7 +26,7 @@ const Category = ({ name, widgetsOld }: any) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {widgets?.map((widget: any, widgetIndex: any) => {
           return (
-            <div className="relative" key={widgetIndex} ref={ref}>
+            <div className="relative" key={widgetIndex}>
               <div className="flex p-4 rounded-md bg-white min-h-[150px] sm:min-h-[180px] lg:min-h-[200px]">
                 <Widget widget={widget} />
               </div>

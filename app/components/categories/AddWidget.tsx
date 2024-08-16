@@ -12,7 +12,7 @@ const AddWidget = ({
   exisitingWidgets,
 }: any) => {
   const [name, setName] = useState("");
-  const [text, setTest] = useState("");
+  const [text, setText] = useState("");
   const [checked, setChecked] = useState(
     new Array(exisitingWidgets.length).fill(true)
   );
@@ -43,7 +43,7 @@ const AddWidget = ({
 
   return (
     <div
-      className={`fixed flex flex-col bg-white h-screen min-w-[300px] sm:w-3/4 lg:w-[10%] xl:w-[25%] top-0 right-0 py-0 px-5 sm:px-8 lg:px-2 overflow-auto transition-transform duration-1000 ${
+      className={`fixed flex flex-col bg-white h-screen min-w-[300px] sm:w-3/4 lg:w-[10%] xl:w-[25%] top-0 right-0 py-0 px-5 sm:px-8 lg:px-2 overflow-auto transition-transform duration-1000 z-[-1000px]${
         isWidgetOpen ? "translate-x-0" : "translate-x-full"
       }`}>
       <h1 className="text-[16px] font-[400] bg-[#13157c] min-w-full text-white py-2 px-2">
@@ -75,7 +75,7 @@ const AddWidget = ({
             className="px-3 py-2 border w-full border-gray-400 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Text"
             type="text"
-            onChange={(e) => setTest(e.target.value)}
+            onChange={(e) => setText(e.target.value)}
           />
         </div>
         <div className="flex justify-end gap-3">
