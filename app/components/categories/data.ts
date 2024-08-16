@@ -58,7 +58,12 @@ const widgets1 = [
     type: "donut",
     options: {
       series: [1689, 68, 36, 7523],
-      labels: ["Failed", "Warning", "Not Available", "Passed"],
+      labels: [
+        "Failed(1689)",
+        "Warning(68)",
+        "Not Available(36)",
+        "Passed(7523)",
+      ],
       responsive: [
         {
           breakpoint: 480,

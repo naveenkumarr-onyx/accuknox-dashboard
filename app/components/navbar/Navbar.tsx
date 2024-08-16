@@ -3,12 +3,10 @@ import React, { useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineBellAlert } from "react-icons/hi2";
-import { categories } from "../categories/data";
 import SearchResults from "../categories/SearchResults";
 
 const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  console.log(searchTerm);
   return (
     <div className="bg-white flex justify-between items-center py-2 px-4 md:px-6 lg:px-8 h-16 shadow-sm">
       <div className="flex items-center gap-2">

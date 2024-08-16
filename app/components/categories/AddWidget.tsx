@@ -58,7 +58,7 @@ const AddWidget = ({
                 <input
                   type="checkbox"
                   checked={checked[index]}
-                  onClick={() => handleCheckboxChange(index)}
+                  onChange={() => handleCheckboxChange(index)}
                   className="w-4 h-4"
                 />
                 <li className="text-sm sm:text-base">{val.name}</li>
@@ -91,7 +91,7 @@ const AddWidget = ({
       </div>
       <CustomButtonWithOneIcon
         onClick={() => setIsWidgetOpen(false)}
-        className="absolute top-[10px] right-[15px] text-2xl text-white hover:text-gray-900 transition"
+        className="absolute top-[10px] right-[15px] text-2xl text-white transition"
         content={<IoMdClose />}></CustomButtonWithOneIcon>
     </div>
   );

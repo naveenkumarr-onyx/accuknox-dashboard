@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { categories } from "./data";
-import Categorie from "./Category";
 import { CustomButtonWithOneIcon } from "../button/Button";
 import { IoAdd, IoTimerSharp } from "react-icons/io5";
 import { GrPowerReset } from "react-icons/gr";

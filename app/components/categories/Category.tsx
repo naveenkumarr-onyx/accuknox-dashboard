@@ -4,6 +4,7 @@ import { Widget } from "./Widget";
 import AddWidget from "./AddWidget";
 import { CustomButtonWithOneIcon } from "../button/Button";
 import { RxCross2 } from "react-icons/rx";
+import { Conform } from "./Conform";
 
 const Category = ({ name, widgetsOld }: any) => {
   const [widgets, setWidgets]: any = useState(widgetsOld);
@@ -11,12 +12,10 @@ const Category = ({ name, widgetsOld }: any) => {
   const ref = useRef(null);
 
   const handleDelete = (index: any) => {
-    if (window.confirm("Are you sure to remove the widgets?")) {
-      const newWidgetList = widgets.filter(
-        (value: any, currentIndex: any) => index !== currentIndex
-      );
-      setWidgets(newWidgetList);
-    }
+    const newWidgetList = widgets.filter(
+      (value: any, currentIndex: any) => index !== currentIndex
+    );
+    setWidgets(newWidgetList);
   };
 
   const handleAdd = () => {

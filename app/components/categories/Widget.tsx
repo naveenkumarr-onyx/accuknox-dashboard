@@ -16,8 +16,12 @@ export const Widget = ({ widget }: any) => {
           />
         ) : (
           <div className="flex flex-col justify-center items-center">
-            <IoBarChartOutline className="" />
-            {widget.text ? widget.text : "No graph data available"}
+            <IoBarChartOutline className="text-gray-700 text-3xl opacity-40" />
+            {widget.text ? (
+              widget.text
+            ) : (
+              <p className="text-gray-700">No graph data available</p>
+            )}
           </div>
         )}
       </div>
