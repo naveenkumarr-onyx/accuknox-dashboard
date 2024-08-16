@@ -8,7 +8,7 @@ import SearchResults from "../categories/SearchResults";
 const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   return (
-    <div className="bg-white flex justify-between items-center py-2 px-4 md:px-6 lg:px-8 h-16 shadow-sm">
+    <div className="bg-white flex flex-row max-sm:flex-col justify-between items-center py-2 px-4 max-sm:gap-2 md:px-6 lg:px-8 max-sm:h-[100px] h-16 shadow-sm">
       <div className="flex items-center gap-2">
         <p className="text-[#cad0d3] hidden lg:inline">Home {">"}</p>
         <span className="text-[#224669] font-semibold">Dashboard V2</span>
@@ -28,8 +28,7 @@ const Navbar = () => {
           <SearchResults searchTerm={searchTerm} />
         </div>
       </div>
-
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 max-sm:hidden">
         <HiOutlineBellAlert className="text-icon text-lg md:text-xl lg:text-2xl" />
         <FaUserCircle className="text-icon text-lg md:text-xl lg:text-2xl" />
         <div className="hidden md:flex flex-col items-end">
