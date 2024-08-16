@@ -29,7 +29,7 @@ const Dashboard = () => {
                 <select
                   name="timeline"
                   id="timeline"
-                  className="text-[#1b1c82] focus:outline-none">
+                  className="text-[#1b1c82] focus:outline-none bg-transparent">
                   <option> Last 2 days</option>
                 </select>
               </div>
