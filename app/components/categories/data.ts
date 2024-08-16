@@ -114,7 +114,7 @@ const widgets2 = [
     name: "Top 5 Namespace Specific Alerts",
   },
   {
-    name: "workload Alerts",
+    name: "Workload Alerts",
   },
 ];
 const widgets3 = [
